@@ -1,0 +1,199 @@
+/* Estilos Generales */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la ventana */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding-top: 56px; /* Ajusta según la altura de tu navbar */
+}
+
+.container {
+    flex: 1; /* Asegura que el contenido principal ocupe el espacio disponible */
+}
+
+/* Imagen */
+.custom-img {
+    height: 300px; /* Ajusta la altura según sea necesario */
+    width: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 50%; /* Borde redondeado para una apariencia circular */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Texto */
+.hero-text {
+    color: #343a40; /* Color más oscuro para mejor legibilidad */
+}
+
+.lead {
+    color: #6c757d; /* Color ligeramente más claro para el texto de lead */
+}
+
+/* Enlaces */
+footer a {
+    color: #007BFF; /* Color de enlace azul */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Texto en negrita para enlaces */
+}
+
+footer a:hover {
+    color: #0056b3; /* Color de enlace más oscuro en hover */
+}
+
+/* Botones */
+.btn-info {
+    background-color: #007BFF; /* Azul profesional */
+    color: white !important; /* Color del texto del botón */
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.btn-info:hover {
+    background-color: #0056b3; /* Azul más oscuro para hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+}
+
+/* Navegación */
+.navbar {
+    padding: 0.5rem 1rem; /* Ajusta el padding para el navbar si es necesario */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Tamaño de fuente para el nombre de la marca */
+}
+
+.navbar-toggler {
+    border: none; /* Elimina el borde del botón */
+    padding: 0.25rem 0.5rem; /* Ajusta el padding según sea necesario */
+    font-size: 1.25rem; /* Asegura que el botón sea lo suficientemente grande */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2899, 99, 99, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* SVG estándar de Bootstrap */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #343a40; /* Color gris oscuro para la barra de navegación */
+}
+
+.navbar-collapse {
+    flex-grow: 1; /* Permite que el menú colapsable ocupe el espacio disponible */
+}
+
+/* Encabezado Personalizado */
+.custom-header {
+    color: #FFFFFF; /* Color del texto del encabezado (blanco) */
+    background-color: #343a40; /* Fondo del encabezado (gris oscuro) */
+    padding: 20px 30px; /* Padding para mejorar el espaciado */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex; /* Flexbox para alinear los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    gap: 15px; /* Espacio entre el texto y los íconos */
+    font-size: 1.5rem; /* Tamaño de fuente ajustado para un mejor equilibrio */
+    line-height: 1.4; /* Espaciado de línea para mejorar la legibilidad */
+}
+
+.custom-svg {
+    height: 35px; /* Tamaño de los íconos */
+    width: 35px; /* Tamaño de los íconos */
+}
+
+.icon-circle {
+    background-color: #6c757d; /* Fondo gris medio */
+    padding: 8px;
+    border-radius: 35%;
+    display: inline-block;
+}
+
+/* Listas */
+.nested-list,
+.nested-list ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding-left: 0; /* Elimina el relleno a la izquierda */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.nested-list li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.nested-list ul {
+    padding-left: 20px; /* Añade indentación a las sublistas */
+}
+
+.nested-list ul ul {
+    padding-left: 20px; /* Añade indentación adicional si es necesario */
+    margin-top: 5px; /* Espacio arriba de las sublistas */
+}
+
+/* Listas de Empleo */
+.list-group {
+    border-radius: 8px; /* Bordes redondeados para la lista */
+    padding: 0; /* Eliminar el padding por defecto */
+}
+
+.list-group-item {
+    background-color: #f8f9fa; /* Fondo claro */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre los elementos de la lista */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.list-unstyled {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nombres y Descripciones de Cargos */
+.course-name {
+    font-weight: bold; /* Negrita para el nombre del cargo */
+    color: #0C1844; /* Color del texto del nombre del cargo */
+    display: block; /* Hacer que el nombre del cargo ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio debajo del nombre del cargo */
+}
+
+.position-description {
+    display: block; /* Hacer que la descripción ocupe toda la línea */
+    font-style: italic; /* Cursiva para las descripciones */
+    margin-bottom: 10px; /* Espacio debajo de la descripción */
+}
+
+/* Títulos de Sección */
+.section-title {
+    font-weight: bold; /* Negrita para los títulos de sección */
+    color: #0C1844; /* Color del texto de los títulos de sección */
+    margin-top: 15px; /* Espacio arriba del título de sección */
+    margin-bottom: 10px; /* Espacio abajo del título de sección */
+    border-bottom: 2px solid #e0e0e0; /* Línea debajo del título de sección */
+    padding-bottom: 5px; /* Espaciado interno debajo de la línea */
+}
+
+/* Pie de Página */
+footer {
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Alinear el texto al centro */
+    border-top: 1px solid #e0e0e0; /* Línea superior sutil */
+    margin-top: auto; /* Asegura que el footer esté en la parte inferior de la página */
+}
+
+footer p {
+    margin: 0; /* Eliminar márgenes por defecto */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para el footer */
+}
